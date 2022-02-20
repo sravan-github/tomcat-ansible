@@ -10,8 +10,8 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-                    git clone https://github.com/sravan-github/test-jenkins.git
-                    cd test-jenkins
+                    git clone https://github.com/sravan-github/tomcat-ansible.git
+                    ls -l
                     ansible-playbook shell.yml
                     '''
                 }
