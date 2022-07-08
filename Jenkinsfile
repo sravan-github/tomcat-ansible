@@ -1,5 +1,5 @@
 pipeline {
-    any
+   agent any
     /*
     agent {
     docker { 
