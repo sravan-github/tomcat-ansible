@@ -1,10 +1,13 @@
 pipeline {
+    any
+    /*
     agent {
     docker { 
             image 'sravangcpdocker/ansible-gcp:1'
             args '-u root:root'
           }
         }
+        */
     stages {
         stage('Cloning Git') {
             steps {
