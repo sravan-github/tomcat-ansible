@@ -14,7 +14,7 @@ pipeline {
                     git clone https://github.com/sravan-github/tomcat-ansible.git
                     ls -l
                     ansible --version
-                    //ansible-playbook tomcat-setup.yml
+                    #ansible-playbook tomcat-setup.yml
                     ansible-playbook -i hosts --private-key=key.pem install-book.yml
                     '''
                 }
