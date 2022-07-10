@@ -15,7 +15,7 @@ pipeline {
                     ls -l
                     ansible --version
                     #ansible-playbook tomcat-setup.yml
-                    ansible-playbook -i hosts --private-key=key.pem install-book.yml
+                    ansible-playbook -i hosts --private-key=key.pem tomcat-setup.yml
                     '''
                 }
            }
