@@ -14,6 +14,7 @@ pipeline {
                     git clone https://github.com/sravan-github/tomcat-ansible.git
                     ls -l
                     ansible --version
+                    ansible-vault decrypt key.json --vault-password-file pass --output key2.json
                     #ansible-playbook tomcat-setup.yml
                     ansible-playbook -i hosts --private-key=key.pem tomcat-setup.yml
                     '''
