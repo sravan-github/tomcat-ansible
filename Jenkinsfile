@@ -15,7 +15,7 @@ pipeline {
                     ls -l
                     whoami
                     hostname
-                    ansible --version
+                    #ansible --version
                     #ansible-vault decrypt asuspem.pem --vault-password-file passwd --output key.pem
                     #ansible-playbook tomcat-setup.yml
                     #ansible-playbook -i hosts --private-key=key.pem tomcat-setup.yml
